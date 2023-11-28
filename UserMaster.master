@@ -1,0 +1,160 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="UserMaster.master.cs" Inherits="User_UserMaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>TRAVEL Guide</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Mukta+Mahee:200,300,400|Abril+Fatface:400,700" rel="stylesheet">
+    
+    <meta name="description" content="Free Template by Free-Template.co" />
+    <meta name="keywords" content="free template, free bootstrap, free website template" />
+    <meta name="author" content="Free-Template.co" />
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/fancybox.min.css">
+    <link rel="stylesheet" href="css/animsition.min.css">
+
+    <link rel="stylesheet" href="fonts/ionicons/css/ionicons.min.css">
+    <link rel="stylesheet" href="fonts/fontawesome/css/font-awesome.min.css">
+
+    <!-- Theme Style -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- 
+    //////////////////////////////////////////////////////
+
+    Free Template 
+    DESIGNED & DEVELOPED by free-template.co
+      
+    Website:    https://free-template.co
+    Email:      freetemplate.co@gmail.com
+    Twitter:    https://twitter.com/Free_Templateco
+    Facebook:   https://www.facebook.com/Free.Template.co/
+
+    //////////////////////////////////////////////////////
+     -->
+
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+  <div class="js-animsition animsition" id="site-wrap" data-animsition-in-class="fade-in" data-animsition-out-class="fade-out">
+
+    <header class="site-header">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-4 site-logo" data-aos="fade"><a href="index.html" class="animsition-link">TRAVEL GUIDE</a></div>
+          <div class="col-8">
+
+
+            <div class="site-menu-toggle js-site-menu-toggle"  data-aos="fade">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <!-- END menu-toggle -->
+
+            <div class="site-navbar js-site-navbar">
+              <nav role="navigation">
+                <div class="container">
+                  <div class="row full-height align-items-center">
+                    <div class="col-md-12 justify-content-center">
+                      <ul class="list-unstyled menu">
+                        <li><a href="HomePage.aspx" class="animsition-link">Home</a></li>
+                        <li><a href="PackageBooking/PhotoList.aspx" class="animsition-link">BookPackage</a></li>
+                          <li><a href="SearchPackage.aspx" class="animsition-link">Search Package</a></li>
+                        <li><a href="MyProfile.aspx" class="animsition-link">Profile</a></li>
+                        <li class="active"><a href="PostComplaint.aspx" class="animsition-link">Complaint</a></li>
+                        <li><a href="FeedBack.aspx" class="animsition-link">FeedBack</a></li>
+                        <li><a href="../Guest/NewLogin.aspx" class="animsition-link">Logout</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- END head -->
+
+    <section class="site-hero overlay page-inside" style="background-image: url(images/hero_2.jpg)">
+      <div class="container">
+        <div class="row site-hero-inner justify-content-center align-items-center">
+          <div class="col-md-10 text-center">
+            <h1 class="heading" data-aos="fade-up">TRAVEL GUIDE</h1>
+            <%--<p class="sub-heading mb-5" data-aos="fade-up" data-aos-delay="100">
+              A free template by <a href="https://free-template.co" target="_blank">Free-Template.co</a>. Download and share!
+            </p>--%>
+          </div>
+        </div>
+        <!-- <a href="#" class="scroll-down">Scroll Down</a> -->
+      </div>
+    </section>
+    <!-- END section -->
+    
+
+    <section class="section">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+   </section>
+    
+    <footer class="section footer-section">
+      <div class="container">
+        <div class="row mb-4">
+          
+          
+          <div class="col-md-3 mb-5 pr-md-5 contact-info">
+            <h3>Contact Info</h3>
+            <p><span class="d-block">Address:</span> <span> Wayanad , Kerala </span></p>
+            <p><span class="d-block">Phone:</span> <span>+91 9526810211</span></p>
+            <p><span class="abhinanthshibuaps@gmail.com">Email:</span> <span> abhinanthshibuaps@gmail.com</span></p>
+          </div>
+          <div class="col-md-3 mb-5">
+            <h3>Subscribe</h3>
+            <p>Sign up for our newsletter</p>
+            <form action="#" class="footer-newsletter">
+              <div class="form-group">
+                <input type="email" class="form-control" placeholder="Your email...">
+                <button type="submit" class="btn"><span class="fa fa-paper-plane"></span></button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <%--<div class="row bordertop text-center pt-5">
+          <p class="col-md-12">&copy; Copyright 2018. All Rights Reserved. <br> Designed &amp; Developed by <a href="https://free-template.co/">Free-Template.co</a> <br>Distributed by <a href="https://themewagon.com/">ThemeWagon</a></p>
+            
+          <p class="col-md-12 social">
+            <a href="#"><span class="fa fa-facebook"></span></a>
+            <a href="#"><span class="fa fa-twitter"></span></a>
+            <a href="#"><span class="fa fa-instagram"></span></a>
+            <a href="#"><span class="fa fa-linkedin"></span></a>
+            <a href="#"><span class="fa fa-youtube"></span></a>
+            
+          </p>
+        </div>--%>
+      </div>
+    </footer>
+    </div> <!-- .animsition -->
+    
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/animsition.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/main.js"></script>
+    </form>
+</body>
+</html>

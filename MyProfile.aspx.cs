@@ -1,14 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-using System.Data.SqlClient;
 using System.Data;
 
-public partial class Guide_Default : System.Web.UI.Page
+public partial class User_Default : System.Web.UI.Page
 {
     SqlConnection con = new SqlConnection("Data Source=SPECTRO;Initial Catalog=db_mainproject;Integrated Security=True");
     protected void Page_Load(object sender, EventArgs e)
@@ -22,7 +22,7 @@ public partial class Guide_Default : System.Web.UI.Page
     }
     protected void fillProfile()
     {
-        string selQry = "select * from tbl_guideregistration u inner join tbl_place p on u.place_id=p.place_id inner join tbl_district d on d.district_id=p.district_id where u.guide_id='" + Session["lgid"] + "'";
+        string selQry = "select * from tbl_newuser where user_id='" + Session["lgid"] + "'";
         DataTable dt = new DataTable();
         SqlDataAdapter adp = new SqlDataAdapter(selQry, con);
         adp.Fill(dt);
@@ -33,8 +33,16 @@ public partial class Guide_Default : System.Web.UI.Page
     {
 
     }
-    protected void Home_Click(object sender, EventArgs e)
+    protected void LinkButton1_Click(object sender, EventArgs e)
     {
         Response.Redirect("HomePage.aspx");
+    }
+    protected void Button1_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("EditProfile.aspx");
+    }
+    protected void Button2_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("EditProfile.aspx");
     }
 }

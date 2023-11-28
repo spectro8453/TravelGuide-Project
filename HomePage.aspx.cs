@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-public partial class Guide_Default : System.Web.UI.Page
+public partial class User_Default : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
@@ -25,6 +25,18 @@ public partial class Guide_Default : System.Web.UI.Page
     }
     protected void LinkButton4_Click(object sender, EventArgs e)
     {
-        Response.Redirect("BookingReport.aspx");
+        Response.Redirect("PostComplaint.aspx");
+    }
+    protected void LinkButton5_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("FeedBack.aspx");
+    }
+    protected void LinkButton6_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("PackageBooking/PhotoList.aspx");
+    }
+    protected void LinkButton7_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("PackageDayWise.aspx"); 
     }
 }
